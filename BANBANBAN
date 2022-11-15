@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int solve(){
+    int n;
+    cin>>n;
+    int FirstA = 1, lastB = 3*n-1;
+    cout<<(n+1)/2<<endl;
+    while(FirstA>lastB){
+        cout<<FirstA<<" "<<lastB<<endl;
+        FirstA +=3;
+        lastB -=3;
+    }
+    return 0;
+}
+int main(){
+    long long testCase;
+    cin>>testCase;
+    while(testCase--){
+        solve();
+    } 
+    return 0;
+}
